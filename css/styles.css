@@ -651,6 +651,41 @@ border-radius: 4px;
     margin-bottom: 30px;
 }
 
+.portfolio-top-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-top-text {
+    position: absolute;
+    top: 0%;
+
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1,55;
+        /* or 156% */
+        height: 100%;
+    
+        letter-spacing: 0.03em;
+    
+        color: #FFFFFF;
+        background-color: rgba(33, 150, 243, 0.9);
+
+        padding-top: 63px;
+        padding-right: 24px;
+        padding-bottom: 63px;
+        padding-left: 24px;
+
+        transform: translateY(100%);
+        transition: transform 300ms linear;
+}
+
+.portfolio-item:hover .portfolio-top-text {
+    transform: translateY(0);
+}
+
 .portfolio-btn {
         color: #212121;
         width: 128px;
@@ -754,7 +789,39 @@ border-radius: 4px;
     fill: #2196F3;
 }
 
+/*-----------------BACKDROP---------------*/
 
+.backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+   
+    background-color: rgba(25, 38, 28, 0.04);
+   
+}
+
+.modal {
+    width: 528px;
+    min-height: 581px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    position: absolute;
+    left: 536px;
+    top: 221px;
+
+}
+
+.modal-close-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #999999;
+    border-radius: 50%;
+}
 
 
 
